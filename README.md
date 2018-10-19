@@ -1,8 +1,7 @@
 # Hadoop
 This repository consists of some basis commands of Hadoop distribution on Cloudera and codes to upload files to HDFS and analyze them by using *wordcount* and *wordmedian*.
 
-1-Let's start with opening a new file on your HDFS:
-
+1-Let's start with opening a new file on your HDFS:                                                                   
 **hdfs dfs -mkdir**                       
 **hdfs dfs -mkdir /examples** (I've just created a file named examples on our HDFS.)
 
@@ -26,7 +25,7 @@ This repository consists of some basis commands of Hadoop distribution on Cloude
 5-You can see how many files under a file or on your HDFS by using commands below:              
 **hdfs dfs -count /examples**                                                       
 **hdfs dfs -count /var**                                                
-**hdfs dfs -count / **                                                            
+**hdfs dfs -count /**                                                            
   
 6-In order to see which files under a file, (text file for instance) use this command :                                 
 **hdfs dfs -cat /examples/ratings.csv** (You will see what ratings.csv contains on terminal.)                           
