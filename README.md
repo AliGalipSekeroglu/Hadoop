@@ -13,3 +13,13 @@ This repository consists of some basis commands of Hadoop distribution on Cloude
 **hdfs dfs -copyFromLocal /source /destination**
 **hdfs dfs -copyFromLocal /home/cloudera/Desktop/ratings.csv /examples**
 
+3-You can also copy your files back to your own Cloudera distribution which you've already copied to HDFS:
+**hdfs dfs -copyToLocal words2.txt**
+
+4-You can re-copy your files on HDFS. (The file which you're going to copy must be already copied into HDFS before.)
+**hdfs dfs -cp words.txt words2.txt** (I copied words.txt as words2.txt one more time.)
+
+5-You can see how many files under a file or on your HDFS by using commands below:
+**hdfs dfs -count /examples
+hdfs dfs -count /var
+hdfs dfs -count / **
