@@ -38,4 +38,17 @@ This repository consists of some basis commands of Hadoop distribution on Cloude
   
 9-You can give/retake(retrieve) permissions such as copying,deleting or more.+ means permissions that you give,- means permissions that you retrieve:                                                                                 
 **hdfs dfs -chmod +x /user/ratings.csv                                                                
-hdfs dfs -chmod -w /user/ratings.csv**                                                            
+hdfs dfs -chmod -w /user/ratings.csv**                
+
+
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount**              
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount words.txt out**       
+*"out" is the name of the file that HDFS will extract the results,you can change its name.*               
+
+**[cloudera@quickstart ~]$ hdfs dfs -ls out**                                                                    
+Found 2 items                                                                                                    
+-rw-r--r--   1 cloudera cloudera          0 2018-10-15 09:59 out/_SUCCESS *this shows your process is finished successfully.*         
+-rw-r--r--   1 cloudera cloudera     717768 2018-10-15 09:59 out/part-r-00000                                               
+
+**[cloudera@quickstart ~]$ hdfs dfs -copyToLocal out/part-r-00000 results.txt**                                      
+*I've copied the results to my local Cloudera system with the file name results.txt*                                         
