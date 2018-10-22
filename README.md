@@ -41,7 +41,8 @@ This repository consists of some basis commands of Hadoop distribution on Cloude
 hdfs dfs -chmod -w /user/ratings.csv**                
 
 
-**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount**              
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount**          
+Usage: wordcount <in> [<in>...] <out>                                                                               
 **[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount words.txt out**       
 *"out" is the name of the file that HDFS will extract the results,you can change its name.*               
 
