@@ -45,7 +45,7 @@ hdfs dfs -chmod -w /user/ratings.csv**
 
                                         Commands to use WORDCOUNT and WORDMEAN
 
-**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount**          
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount**                 
 Usage: wordcount <in> [<in>...] <out>                                             
 **[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordcount words.txt out**       
 *"out" is the name of the file that HDFS will extract the results,you can change its name.*               
@@ -56,4 +56,11 @@ Found 2 items
 -rw-r--r--   1 cloudera cloudera     717768 2018-10-15 09:59 out/part-r-00000                                               
 
 **[cloudera@quickstart ~]$ hdfs dfs -copyToLocal out/part-r-00000 results.txt**                                      
-*I've copied the results to my local Cloudera system with the file name results.txt*                                         
+*I've copied the results to my local Cloudera system with the file name results.txt*       
+
+
+
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordmedian**                  
+**[cloudera@quickstart ~]$ hadoop jar /usr/share/doc/hadoop-0.20-mapreduce/examples/hadoop-examples.jar wordmedian words.txt out3**     
+*(I've given a name "out3" as the file for result because I've already use "out" name has already exists. You can change the name.)*     
+*You will get the result on Terminal,not in a different file,keep tracking the terminal for the result.*                   
