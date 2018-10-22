@@ -48,7 +48,7 @@ Usage: wordcount <in> [<in>...] <out>
 
 **[cloudera@quickstart ~]$ hdfs dfs -ls out**                                                                    
 Found 2 items                                                                                                    
--rw-r--r--   1 cloudera cloudera          0 2018-10-15 09:59 out/_SUCCESS *this shows your process is finished successfully.*         
+-rw-r--r--   1 cloudera cloudera          0 2018-10-15 09:59 out/_SUCCESS (*this shows your process is finished successfully.*)         
 -rw-r--r--   1 cloudera cloudera     717768 2018-10-15 09:59 out/part-r-00000                                               
 
 **[cloudera@quickstart ~]$ hdfs dfs -copyToLocal out/part-r-00000 results.txt**                                      
